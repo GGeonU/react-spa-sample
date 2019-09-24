@@ -2,12 +2,11 @@ import React from 'react';
 import * as qs from "qs";
 
 const About = ({location}) => {
+    console.log(location);
     const query = qs.parse(location.search, {
         ignoreQueryPrefix: true,
     });
-
     const showDetail = query.detail === 'true';
-
     return(
         <div>
             <h1>소개</h1>

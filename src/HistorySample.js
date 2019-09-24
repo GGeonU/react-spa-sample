@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 
 const HistorySample = (props) => {
 
+    console.log(props);
+
     const handleGoBack = () => {
         props.history.goBack();
     };
